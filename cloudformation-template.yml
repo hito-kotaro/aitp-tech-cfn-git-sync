@@ -15,3 +15,14 @@ Resources:
         - Key: Project
           Value: !Ref Prefix
 
+  Subnet: 
+    Type: AWS::EC2::Subnet
+    Properties: 
+      AvailabilityZone: ap-northeast-1a
+      CidrBlock: '10.1.0.0/24' 
+      VpcId: !Ref VPC 
+      Tags: 
+        - Key: Name
+          Value: !Sub "${Prefix}-subnet-1a"
+        - Key: Project
+          Value: !Ref Prefix
