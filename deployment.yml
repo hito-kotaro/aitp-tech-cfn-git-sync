@@ -1,0 +1,5 @@
+template-file-path: build/cloudformation-template.yml
+parameters:
+  Prefix: 'aitp-tech-blog'
+tags: 
+  Project: 'aitp-tech-blog'
